@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Compare custom and baseline Formula 1 strategies.">
+  <title>F1 Strategy Simulator | Compare</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="nav-wrap"><a class="logo" href="index.html"><span class="logo-mark">🏎</span><span>F1 Strategy Simulator</span></a><button class="menu-btn" type="button">☰</button><nav class="nav-links"><a href="index.html">Home</a><a href="setup.html">Setup</a><a href="simulator.html">Simulator</a><a class="active" href="compare.html">Compare</a></nav></div></header>
+  <main class="container">
+    <section class="panel"><div class="panel-header"><div><div class="kicker">Comparison</div><h2>Your strategy vs. baseline</h2><p>Compare two plans side-by-side to show how tire choices change the race.</p></div></div>
+      <div class="compare-grid"><article class="card"><small>Custom strategy</small><h3>Your Plan</h3><p>A more aggressive opening stint with a long middle phase.</p><table><tr><th>Laps</th><th>Tire</th></tr><tr><td>1-18</td><td>Soft</td></tr><tr><td>19-47</td><td>Medium</td></tr><tr><td>48-78</td><td>Hard</td></tr></table></article><article class="card"><small>Baseline</small><h3>Real Race Style</h3><p>A safer opening setup with later tire attack.</p><table><tr><th>Laps</th><th>Tire</th></tr><tr><td>1-24</td><td>Medium</td></tr><tr><td>25-52</td><td>Hard</td></tr><tr><td>53-78</td><td>Soft</td></tr></table></article></div>
+    </section>
+    <section class="panel"><div class="panel-header"><div><div class="kicker">Performance</div><h2>Position over race distance</h2><p>A visual area for strategy comparison data.</p></div></div><div class="chart-box"><svg viewBox="0 0 700 260"><line x1="35" y1="230" x2="670" y2="230" stroke="#bbb"/><line x1="35" y1="30" x2="35" y2="230" stroke="#bbb"/><path d="M35 70 C140 85 190 110 280 122 S430 180 655 115" fill="none" stroke="#c90000" stroke-width="4"/><path d="M35 95 C125 100 220 125 300 160 S470 190 655 155" fill="none" stroke="#555" stroke-width="4" stroke-dasharray="8 8"/></svg></div></section>
+    <section class="stats-grid"><div class="info-box"><span>Your finish</span><strong>P2</strong></div><div class="info-box"><span>Baseline finish</span><strong>P4</strong></div><div class="info-box"><span>Net gain</span><strong>+2 positions</strong></div></section>
+  </main>
+  <footer class="footer">F1 Strategy Simulator — Compare</footer>
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Select the race and driver for the F1 strategy simulator.">
+  <title>F1 Strategy Simulator | Setup</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="nav-wrap"><a class="logo" href="index.html"><span class="logo-mark">🏎</span><span>F1 Strategy Simulator</span></a><button class="menu-btn" type="button">☰</button><nav class="nav-links"><a href="index.html">Home</a><a class="active" href="setup.html">Setup</a><a href="simulator.html">Simulator</a><a href="compare.html">Compare</a></nav></div></header>
+
+  <main class="container two-col">
+    <section class="panel">
+      <div class="panel-header"><div><div class="kicker">Race setup</div><h2>Select your starting point</h2><p>Race and driver options are loaded from the public Jolpica F1 API when available.</p></div></div>
+      <div class="form-row"><label for="seasonSelect">Season</label><select id="seasonSelect"><option value="current">Current season</option><option value="2024">2024</option><option value="2023">2023</option></select></div>
+      <div class="form-row"><label for="raceSelect">Grand Prix</label><select id="raceSelect"><option>Loading races...</option></select></div>
+      <div class="form-row"><label for="driverSelect">Driver</label><select id="driverSelect"><option>Loading drivers...</option></select></div>
+      <p class="api-note" id="apiStatus">Connecting to F1 API...</p>
+      <a class="btn red" href="simulator.html" id="saveSetup">Continue to Simulator</a>
+    </section>
+
+    <section>
+      <div class="panel">
+        <div class="panel-header"><div><div class="kicker">Preview</div><h2 id="raceName">Race Name</h2><p id="raceRound">This area updates when the dropdowns change.</p></div></div>
+        <div class="fake-track"><svg viewBox="0 0 300 180" aria-label="Simple track drawing"><path class="track-line" d="M55 105 C40 75,55 36,96 34 C135 31,166 55,194 50 C225 45,260 40,263 66 C267 93,220 96,216 118 C212 139,238 151,208 154 C178 158,160 138,130 143 C104 148,83 162,69 146 C55 130,72 118,55 105"/><path class="track-accent" d="M55 105 C40 75,55 36,96 34 C135 31,166 55,194 50 C225 45,260 40,263 66 C267 93,220 96,216 118 C212 139,238 151,208 154 C178 158,160 138,130 143 C104 148,83 162,69 146 C55 130,72 118,55 105"/></svg></div>
+        <div class="info-list"><div class="info-box"><span>Location</span><strong id="raceLocation">---</strong></div><div class="info-box"><span>Date</span><strong id="raceDate">---</strong></div><div class="info-box"><span>Circuit</span><strong id="raceTrack">---</strong></div><div class="info-box"><span>Driver</span><strong id="raceDriver">---</strong></div></div>
+      </div>
+      <div class="panel">
+        <div class="panel-header"><div><div class="kicker">Driver cards</div><h2>Driver options</h2></div></div>
+        <div class="driver-grid" id="driverCards"></div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">F1 Strategy Simulator — Race Setup</footer>
+  <script src="app.js"></script>
+</body>
+</html>

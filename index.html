@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Build and test Formula 1 pit stop and tire strategies using real race data.">
+  <title>F1 Strategy Simulator | Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="logo" href="index.html"><span class="logo-mark">🏎</span><span>F1 Strategy Simulator</span></a>
+      <button class="menu-btn" type="button" aria-label="Open navigation">☰</button>
+      <nav class="nav-links">
+        <a class="active" href="index.html">Home</a>
+        <a href="setup.html">Setup</a>
+        <a href="simulator.html">Simulator</a>
+        <a href="compare.html">Compare</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <div class="kicker">Formula 1 strategy lab</div>
+        <h1>Build your own race strategy.</h1>
+        <p>Choose a Grand Prix, plan tire stints, and run a simple simulation to see how pit timing and driving style affect the race.</p>
+        <div class="actions">
+          <a class="btn red" href="setup.html">Start Simulation</a>
+          <a class="btn secondary" href="simulator.html">Open Builder</a>
+        </div>
+      </div>
+
+      <div class="preview-card">
+        <div class="browser-bar"><span class="dot red"></span><span class="dot"></span><span class="dot"></span></div>
+        <div class="fake-track">
+          <svg viewBox="0 0 300 180" aria-label="Simple track drawing">
+            <path class="track-line" d="M55 105 C40 75,55 36,96 34 C135 31,166 55,194 50 C225 45,260 40,263 66 C267 93,220 96,216 118 C212 139,238 151,208 154 C178 158,160 138,130 143 C104 148,83 162,69 146 C55 130,72 118,55 105"/>
+            <path class="track-accent" d="M55 105 C40 75,55 36,96 34 C135 31,166 55,194 50 C225 45,260 40,263 66 C267 93,220 96,216 118 C212 139,238 151,208 154 C178 158,160 138,130 143 C104 148,83 162,69 146 C55 130,72 118,55 105"/>
+          </svg>
+        </div>
+        <div class="info-list">
+          <div class="info-box"><span>Sample race</span><strong>Monaco GP</strong></div>
+          <div class="info-box"><span>Strategy</span><strong>2 stops</strong></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="feature-grid">
+      <article class="card"><small>Step 1</small><h3>Pick a race</h3><p>Select a season, circuit, and driver before entering the strategy builder.</p></article>
+      <article class="card"><small>Step 2</small><h3>Build stints</h3><p>Add lap ranges, choose tire compounds, and adjust aggression.</p></article>
+      <article class="card"><small>Step 3</small><h3>Compare results</h3><p>See your plan against a baseline race strategy using simple visualizations.</p></article>
+    </section>
+
+  </main>
+
+  <footer class="footer">F1 Strategy Simulator — Web Development Final Project</footer>
+  <script src="app.js"></script>
+</body>
+</html>
